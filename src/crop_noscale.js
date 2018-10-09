@@ -171,7 +171,7 @@ const send = async (blob) => {
     let data = new FormData()
     data.append('name', image_name)
     data.append('file', blob)
-    let res = await axios.post('http://upload-image.test/upload', data, {
+    let res = await axios.post('http://image-upload.test/upload', data, {
         headers: {
             'Content-Type': 'multipart/form-data'
         },
